@@ -1,0 +1,47 @@
+#Javascript app deployment
+
+mkdir hello-docker # this is our repository (similar to creating a repo in git)
+cd hello-docker
+code # open this in vscode (or your favourtite code editor)
+# create a new app.js java script (to write a program in Java)
+console.log ("Hello docker!");
+#To ship this application (program) with docker to a different computer is complex
+#To use docker
+#create a Dockerfile (no extension)
+#write inside the Dockerfile instruction for packaging our application
+#start from a base image (is has a bunch of file) and add additional file to it.
+#The images are built on top of different distributions of linux
+#(check hub.docker.com)
+#instruction inside dockerfile is as given below
+FROM node:alpine # (: is a tag, meaning we are specifying linux destribution alpine from the node image)
+COPY ./app #to copy our program files from the current directly into the image we have inside the app directory
+WORKDIR /app
+CMD node app.js #We are creating a command to execute the app
+#all the instructions above assume that we are currently inside the app directory. The document our deployment process
+
+#packaging our app.js application
+docker build -t hello-docker . #we use a period to specify where  our docker file can be found (the current directory)
+
+#To see all the images
+docker images ls
+
+#we can not run this image on any computer running docker
+docker run hello-docker #hello-docker is the image and contains all the files for running our application
+#Can run it alternatively if it is hosted as in image in dockerhub
+docker pull dockeraddress/image-name
+#to view the image
+docker image ls
+#to run the image
+docker run dockeraddress/image
+
+#to load ubuntu (as an image) from dockerhub and use its command
+docker pull ubuntu
+#alternatively
+docker run ubuntu # looks for the images if it's on your computer and pulls from hub if it's not
+docker ps # shows the list of running proceses or containers
+docker ps -a #displays all running (including hidden) containers
+docker run -it # we are staring a container interatively and loading the ubutu image that we have loaded locatlly
+#the above starts a shell prompt where we can execute linux commands
+
+#BUILDING images
+docker ps #to view containers
