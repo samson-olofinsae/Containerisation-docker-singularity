@@ -1,0 +1,4 @@
+This project dockerises the process of analysing data from mutation and gene knockout from a CRISPR single gene knock-out experiment.
+The codes are packaged up n the form of a Dockerfile (attached). 
+All the associated files that constitute the docker image are attached. 
+The anova_docker_run.sh file is executed to run docker and build the image.
