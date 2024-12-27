@@ -19,7 +19,7 @@ with open(sys.argv[1],'r') as myinput:
    
 with open(sys.argv[2],'r') as myinput:
     mutation=myinput.readlines()[0].strip('\n')
-    #print(mutation)
+    #print(mutation
    
 
 ko_table=pd.read_csv(geneinfofile,sep='\t')
@@ -33,7 +33,7 @@ mutation_record=mut_table.loc[mutation,:].values
 
 res=f_oneway(mutation_record,records, axis=0)
         
-result='%s\t%s\t%s\n'%(gene,mutation,str(res))        
+result='%s\t%s\t%s\n'%(gene,mutation,str(res))       
 
 
 with open(outfile,'a') as myoutput:
