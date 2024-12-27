@@ -30,7 +30,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Installing pandas, scipy, datatest and unittest2
 RUN pip3 install pandas scipy datatest unittest2
 
-
 # Installing wget
 RUN apt-get update && apt-get install -y wget
 
