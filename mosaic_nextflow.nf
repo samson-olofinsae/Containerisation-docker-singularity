@@ -34,7 +34,6 @@ res=f_oneway(mutation_record,records, axis=0)
         
 result='%s\t%s\t%s\n'%(gene,mutation,str(res))       
 
-
 with open(outfile,'a') as myoutput:
     myoutput.write(result)
     myoutput.close()
