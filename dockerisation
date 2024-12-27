@@ -1,4 +1,4 @@
-#Javascript app deployment
+#Javascript app deployment.
 
 mkdir hello-docker # this is our repository (similar to creating a repo in git)
 cd hello-docker
