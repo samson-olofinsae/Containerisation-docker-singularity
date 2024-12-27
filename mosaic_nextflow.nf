@@ -24,7 +24,6 @@ ko_table=pd.read_csv(geneinfofile,sep='\t')
 
 mut_table=pd.read_csv(mutinfofile,sep='\t')
 
-
 mut_table.set_index('Mutation',inplace=True)
 records=ko_table[gene].values
 mutation_record=mut_table.loc[mutation,:].values
