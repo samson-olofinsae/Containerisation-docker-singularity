@@ -21,7 +21,6 @@ with open(sys.argv[2],'r') as myinput:
     mutation=myinput.readlines()[0].strip('\n')
     #print(mutation
    
-
 ko_table=pd.read_csv(geneinfofile,sep='\t')
 
 mut_table=pd.read_csv(mutinfofile,sep='\t')
