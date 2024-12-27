@@ -33,8 +33,7 @@ mutation_record=mut_table.loc[mutation,:].values
 
 res=f_oneway(mutation_record,records, axis=0)
         
-result='%s\t%s\t%s\n'%(gene,mutation,str(res))
-        
+result='%s\t%s\t%s\n'%(gene,mutation,str(res))        
 
 
 with open(outfile,'a') as myoutput:
