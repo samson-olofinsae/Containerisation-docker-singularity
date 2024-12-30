@@ -6,7 +6,6 @@ def setUpModule():
     with dt.working_directory(__file__):
             df = pd.read_csv('Mutations.tsv',sep='\t')
                 
-
 class TestMutation(dt.DataTestCase):
      def test_assert_integer(self):
           self.assertValid(df['ModelM'], int)
