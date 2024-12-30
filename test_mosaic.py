@@ -130,6 +130,5 @@ class TestMutation(dt.DataTestCase):
                  if row > 0:
                       self.assertValid (row, 1)
 
-
 if __name__ == '__main__':
           unittest.main()
