@@ -37,7 +37,6 @@ class TestMutation(dt.DataTestCase):
                  if row > 0:
                       self.assertValid (row, 1)
 
-
      def test_ModelI_range_value_0_to_1(self):
            for row in df['ModelI']:
                  if row < 1:
