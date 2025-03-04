@@ -2,7 +2,6 @@ import pandas as pd
 from scipy.stats import f_oneway
 
 ko_table=pd.read_csv('Gene_KOs.tsv',sep='\t')
-
 mut_table=pd.read_csv('Mutations.tsv',sep='\t')
 
 #ko_table
