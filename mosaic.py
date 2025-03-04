@@ -19,8 +19,7 @@ for gene in genelist:
     for mutation in mutationlist:
         mutation_record=mut_table.loc[mutation,:].values
         
-        #print(gene,mutation)
-        
+        #print(gene,mutation)        
         #print(records.shape)
         #print(mutation_record.shape)
         res=f_oneway(mutation_record,records, axis=0)
