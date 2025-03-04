@@ -29,8 +29,7 @@ for gene in genelist:
         
         result=[gene,mutation,str(res)]
         allresults.append(result)
-        #oneway(records,mutation_record)
-        
+        #oneway(records,mutation_record)        
         
 df=pd.DataFrame(allresults,columns=['Gene','Mutation','Oneway'])
 df.to_csv('oneway.csv',index=False)
