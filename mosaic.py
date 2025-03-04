@@ -23,8 +23,7 @@ for gene in genelist:
         #print(mutation_record.shape)
         res=f_oneway(mutation_record,records, axis=0)
         
-        result='%s,%s,%s'%(gene,mutation,str(res))
-        
+        result='%s,%s,%s'%(gene,mutation,str(res))        
         result=[gene,mutation,str(res)]
         allresults.append(result)
         #oneway(records,mutation_record)        
