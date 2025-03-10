@@ -34,6 +34,7 @@ docker image ls
 #to run the image
 docker run dockeraddress/image
 
+
 #to load ubuntu (as an image) from dockerhub and use its command
 docker pull ubuntu
 #alternatively
