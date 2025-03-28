@@ -25,7 +25,6 @@ script:
 """
 echo  "Gene\tMutation\tOneway" > $outfile 
 """
-
 }
 
 // process "anova_for_mutation_gene_pair" computes the scipy anova for each gene-mutation coordinates/records in the output file 
