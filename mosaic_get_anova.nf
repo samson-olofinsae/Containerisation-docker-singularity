@@ -6,7 +6,6 @@ params.mutationlistfile="$projectDir/mutationlist.txt"
 params.outfile="$projectDir/nextflow-output.tsv"
 params.size = 5
 
-
 log.info """\
     A N O V A - N F - P I P E L I N E
     ===================================
