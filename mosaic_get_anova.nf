@@ -1,6 +1,5 @@
 // declare the params
 
-
 params.genelistfile = "$projectDir/genelist.txt"
 params.mutationlistfile="$projectDir/mutationlist.txt"
 params.outfile="$projectDir/nextflow-output.tsv"
