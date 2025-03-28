@@ -42,8 +42,7 @@ process anova_for_mutation_gene_pair {
  
   python3 /python/mosaic_nextflow.py $x
   
-  """
-  
+  """  
  }
 
 workflow {
