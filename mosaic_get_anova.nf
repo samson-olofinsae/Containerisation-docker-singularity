@@ -16,7 +16,6 @@ log.info """\
     .stripIndent()
 
 
-
 // process 'create_output_file' generates all gene-mutation pair records/coordinates and saves as an output file (output.tsv)
 
 process create_output_file { 
